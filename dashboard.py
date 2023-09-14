@@ -41,11 +41,11 @@ def create_ratings_products(orders, products):
     return group_rating_product
 
 # import dataset
-data_customers = pd.read_csv('customers.csv')
-data_geolocation = pd.read_csv('geolocation.csv')
-data_orders = pd.read_csv('orders.csv')
-data_products = pd.read_csv('products.csv')
-data_sellers = pd.read_csv('sellers.csv')
+data_customers = pd.read_csv('./dataset/customers.csv')
+data_geolocation = pd.read_csv('./dataset/geolocation.csv')
+data_orders = pd.read_csv('./dataset/orders.csv')
+data_products = pd.read_csv('./dataset/products.csv')
+data_sellers = pd.read_csv('./dataset/sellers.csv')
 
 # menyiapkan dataframe
 group_order_success = create_top_product(data_orders, data_products)
