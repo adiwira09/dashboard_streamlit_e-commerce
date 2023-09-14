@@ -64,7 +64,7 @@ with st.sidebar:
     # Menambahkan foto
     st.markdown(
         "<div style='display: flex; justify-content: center;'>"
-        "<img src='https://raw.githubusercontent.com/adiwira09/dicoding/main/photo.png' width='200'>"
+        "<img src='https://raw.githubusercontent.com/adiwira09/dashboard_streamlit_e-commerce/main/image/photo.png' width='200'>"
         "</div>",
         unsafe_allow_html=True
     )
@@ -150,7 +150,7 @@ st.subheader("Map persebaran customer dan seller")
 col1,col2 = st.columns(2)
 
 # import image map
-map = plt.imread('map.png')
+map = plt.imread('./image/map.png')
 BBox = ((customer_map_data.geolocation_lng.min(), customer_map_data.geolocation_lng.max(),customer_map_data.geolocation_lat.min(), customer_map_data.geolocation_lat.max()))
 
 with col1:
