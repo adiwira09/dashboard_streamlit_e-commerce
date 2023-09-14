@@ -115,7 +115,6 @@ plt.margins(x=0.07)
 
 # Menambahkan label dan judul
 plt.xlabel('Review score')
-plt.ylabel('Kategori produk')
 
 # Memutar sumbu y
 plt.gca().invert_yaxis()
@@ -202,7 +201,7 @@ with col3:
     plt.tight_layout()
     st.pyplot(plt)
 
-st.markdown("<h3 style='text-align: center; font-size: 20px;'>2018</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; font-size: 20px;'>Sept 2016 - Sept 2018</h3>", unsafe_allow_html=True)
 plt.figure(figsize=(10, 3))  # Ukuran gambar (opsional)
 plt.plot('order_approved_at', 'order_id', data=group_order_approved, marker='', linestyle='-')
 plt.ylabel('Qty')
