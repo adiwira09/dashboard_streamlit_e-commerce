@@ -114,7 +114,8 @@ for i,p in enumerate(ax.patches):
 plt.margins(x=0.07)
 
 # Menambahkan label dan judul
-# plt.xlabel('Review score')
+plt.xlabel('Review score')
+plt.ylabel('')
 
 # Memutar sumbu y
 plt.gca().invert_yaxis()
@@ -149,7 +150,7 @@ st.subheader("Map persebaran customer dan seller")
 col1,col2 = st.columns(2)
 
 # import image map
-map = plt.imread('./image/map.png')
+map = plt.imread('/workspaces/dashboard_streamlit_e-commerce/image/map.png')
 BBox = ((customer_map_data.geolocation_lng.min(), customer_map_data.geolocation_lng.max(),customer_map_data.geolocation_lat.min(), customer_map_data.geolocation_lat.max()))
 
 with col1:
@@ -201,7 +202,7 @@ with col3:
     plt.tight_layout()
     st.pyplot(plt)
 
-st.markdown("<h3 style='text-align: center; font-size: 20px;'>Sept 2016 - Sept 2018</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; font-size: 20px;'>2018</h3>", unsafe_allow_html=True)
 plt.figure(figsize=(10, 3))  # Ukuran gambar (opsional)
 plt.plot('order_approved_at', 'order_id', data=group_order_approved, marker='', linestyle='-')
 plt.ylabel('Qty')
