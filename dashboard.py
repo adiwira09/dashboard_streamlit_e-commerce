@@ -114,7 +114,7 @@ for i,p in enumerate(ax.patches):
 plt.margins(x=0.07)
 
 # Menambahkan label dan judul
-plt.xlabel('Review score')
+# plt.xlabel('Review score')
 
 # Memutar sumbu y
 plt.gca().invert_yaxis()
